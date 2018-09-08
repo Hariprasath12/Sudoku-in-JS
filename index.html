@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sudoku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            Sudoku
+        </div>
+        <div class="timer">
+            <span id="min">
+
+            </span>:
+            <span id="sec">
+
+            </span>
+
+        </div>
+
+
+        <div class="game">
+            <ul>
+                <li>
+                    <div class="box-1">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b1-1" >
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b1-2">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b1-3">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b1-4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b1-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b1-6" value="8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b1-7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b1-8" value="2">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b1-9">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box-1">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b2-1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b2-2">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b2-3">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b2-4" value="7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b2-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b2-6">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b2-7" value="1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b2-8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b2-9" value="6">
+                        </div>
+                    </div>
+
+
+                </li>
+                
+                <li>
+                    <div class="box-1">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b3-1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b3-2" value="7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b3-3" value="8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b3-4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b3-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b3-6">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b3-7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b3-8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b3-9" value="9">
+                        </div>
+                    </div>
+
+
+                </li>
+                
+                <li>
+                    <div class="box-1 space">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b4-1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b4-2" value="3">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b4-3" value="9">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b4-4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b4-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b4-6">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box " id="b4-7" value="2">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b4-8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b4-9">
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="box-1">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b5-1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b5-2">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b5-3">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b5-4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b5-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b5-6" value="5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b5-7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b5-8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b5-9">
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="box-1">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b6-1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b6-2">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b6-3">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b6-4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b6-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b6-6">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b6-7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b6-8" value="4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b6-9">
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="box-1 space">
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b7-1">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b7-2" value="9">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b7-3">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b7-4">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b7-5">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b7-6">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b7-7">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box" id="b7-8">
+                        </div>
+                        <div class="small-box-1">
+                            <input type="text" class="box space-bootom" id="b7-9">
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                        <div class="box-1">
+                            <div class="small-box-1">
+                                <input type="text" class="box" id="b8-1" value="6">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box" id="b8-2">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box space-bootom" id="b8-3">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box" id="b8-4">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box" id="b8-5">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box space-bootom" id="b8-6">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box" id="b8-7" value="9">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box" id="b8-8">
+                            </div>
+                            <div class="small-box-1">
+                                <input type="text" class="box space-bootom" id="b8-9" value="7">
+                            </div>
+                        </div>
+    
+    
+                    </li>
+                    <li>
+                            <div class="box-1">
+                                <div class="small-box-1">
+                                    <input type="text" class="box" id="b9-1">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box" id="b9-2">
+                                </div>
+                                <div class="small-box-1 space-bootom">
+                                    <input type="text" class="box" id="b9-3">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box" id="b9-4">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box " id="b9-5" value="8">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box space-bootom" id="b9-6" value="4">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box" id="b9-7">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box" id="b9-8">
+                                </div>
+                                <div class="small-box-1">
+                                    <input type="text" class="box" id="b9-9">
+                                </div>
+                            </div>
+        
+                        </li>
+
+            </ul>  
+            <div class="buttons">
+                  <input type="submit" value="submit" onclick="onSubmit()">
+            </div>
+           
+        </div>
+                
+
+    </div>
+   <script src="./JS/index.js" async></script>
+</body>
+
+</html>
